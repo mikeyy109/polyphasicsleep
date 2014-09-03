@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Polyphasic Sleep Beta</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Home</string>
+    <string name="title_section2">Alarm Manager</string>
+    <string name="title_section3">Statistics</string>
+    <string name="title_section4">Schedules</string>
+    <string name="title_section5">Information</string>
+    <string name="menu_item_delete">Cancel</string>
+    <string name="menu_item_rate">Rate on Google Play</string>
+    <string name="menu_item_website">Website</string>
+    <string name="menu_item_report">Report a Bug</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="pref_allow_not">Allow Notifications</string>
+    <string name="pref_allow_not_summary">Reminds you to nap</string>
+    <string name="pref_sync_frequency">Set Default Schedule</string>
+    <string name="pref_sync_frequency_summary">Sets the default sleep schedule</string>
+    <string name="pref_user_name">Set username</string>
+    <string name="pref_user_name_summary">Set your username</string>
+    <string name="pref_goDark">Go Dark Theme</string>
+    <string name="pref_goDark_summary">Changes theme to dark</string>
+
+    <string name="pref_user_profile">User Profile</string>
+    <string name="pref_general_setting">General Settings</string>
+    <string name="mathDifSum">Sleep now math difficulty</string>
+    <string name="pref_mathdif">Math Alarm Difficulty</string>
+
+
+    <!-- Math Alarm Activity -->
+
+    <string name="title_activity_set_alarms">Set Alarm</string>
+    <string name="no_alarms">No alarms have been set</string>
+    <string name="button_new">New</string>
+
+    <!-- Menu -->
+    <string name="menu_item_new">New</string>
+    <string name="menu_item_save">Save</string>
+    <string name="menu_item_deleteA">Cancel</string>
+
+    <string name="popupDialog">dd</string>
+    <string name="popupDialogHead">dd</string>
+
+
+
+    <!-- Alert -->
+    <string name="_0">0</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="decimal_button_text">,</string>
+    <string name="clear_button_text">Clear</string>
+    <string name="minus_button_text">-</string>
+
+    <color name="title_background_color">#000000</color>
+
+    <string name="button_delete">Delete</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="country_prompt">Choose sleep schedule</string>
+
+    <string-array name="schedule_arrays">
+        <item>Monophasic: 7H core</item>
+        <item>Segmented: 3.5H core x2</item>
+        <item>Siesta: 5H core, 1.5H nap</item>
+        <item>Triphasic: 1.5H core x3</item>
+        <item>Everyman: 3.5H core, 20Min nap x3</item>
+        <item>Dual Core: 3.5H core, 1.5H core, 20Min nap</item>
+        <item>Uberman: 20Min nap x6</item>
+        <item>Dymaxion: 30Min nap x4</item>
+        <item>SPAMAYL: 20Min nap x8</item>
+        <item>Use My Custom Schedule</item>
+    </string-array>
+
+    <string name="title_activity_notification_receiver">NotificationReceiver</string>
+    <string name="title_activity_web_view">Polyphasic Sleep Beta</string>
+
+
+    <string name="updateNewsText">22.08.14: Requesting all users to give feedback on usage, ideas, bugs or problems. Got something you want this app to do? Want something changed? Please email all feedback to liquications@gmail.com to help move this project forward.</string>
+
+
+
+    <string name="title_activity_monophasic">Monophasic Sleep</string>
+    <string name="title_activity_segmented">Segmented Sleep</string>
+    <string name="title_activity_siesta">Siesta Sleep</string>
+    <string name="title_activity_triphasic">Triphasic Sleep</string>
+    <string name="title_activity_everyman">Everyman Sleep</string>
+    <string name="title_activity_dualcore">Dualcore Sleep</string>
+    <string name="title_activity_uberman">Uberman Sleep</string>
+    <string name="title_activity_dymaxion">Dymaxion Sleep</string>
+    <string name="title_activity_spamayl">Spamayl Sleep</string>
+    <string name="monophasicLrg">Monophasic is pretty much the most common sleep schedule in the world. Monophasic sleep essentially consists of sleeping once per day, usually for between 7 and 9 hours per night. Monophasic is not the best way to sleep contrary to popular belief, but instead it is a byproduct of the long work hours of the industrial revolution that has remained a cultural norm even as work hours have shortened.</string>
+    <string name="segmentedLrg">Segmented sleep is considered the most natural sleeping pattern according to common scientific literature. It consists of two sleeps, both at night time, first going to sleep at dusk, and secondly waking at dawn, synchronized with the local lighting patterns, sunrise and sunset. If a person changes their sleep from monophasic sleep to segmented, then after some acclimatization they will experience a change in hormone regulation, energy metabolism and a profound mental clarity throughout the day, and the middle of the night. A Segmented Sleeper typically sleeps between 6 and 8 hours a day.</string>
+    <string name="dualcoreLrg">Dual Core sleep is a derivative of the other schedules but with a core sleep around dusk, a core around dawn, and a number of naps in the afternoon. Dual core schedules can have the benefits of both segmented sleep and siestas and so is theoretically very healthy. DC1 is two cores totalling about 5 hours sleep, and one nap in the middle of the day. DC2 is two cores totalling about 4 hours sleep, and two naps throughout the day. DC3 is two cores totalling about 3h sleep, and three naps throughout the day.Segmented Sleep, a combination of a segmented core with other types of schedules.</string>
+    <string name="dymaxionLrg">Dymaxion is another popularly attempted schedule, although its difficulty is even greater than Uberman, to the point of being nearly impossible. It’s predict only the genetically mutated DEC2 gene ‘very short sleepers’ can be successful following such a schedule, which would includes far less than 1% of the world population. The Dymaxion schedule was coined by Buckminster Fuller, and involves sleeping 4 times a day for 30 minutes. Even though the Dymaxion schedule does not increase available awake time any more than Uberman, it is prized for the increased convenience to the person’s social and work life.</string>
+    <string name="everymanLrg">The Everyman schedule is the most successful reduced-sleep schedule to date, it is constantly increasing in popularity, and people have achieved it without compromising their current health. While monophasic, biphasic, and triphasic schedules are all Circadian centric schedules, Everyman schedules rely on both Circadian and Ultradian Rhythms. This makes Everyman schedules have a significantly more difficult adaptation period than all of the previous schedules, as the consistency of times between sleeps matters much more. That being said, Everyman is still significantly easier than any of the nap-only schedules. Everyman schedules include Everyman 2 (E2) which is a with core sleep between 4.5 and 6 hours and two 20 minute naps; Everyman 3, with a core between 3 and 4 hours and three 20 minute naps; and Everyman 4 with a core between 1.5 and 2.5 hours, with four 20 minute naps.</string>
+    <string name="spamaylLrg">SPAMAYL is the younger, fresher cousin of Uberman. SPAMAYL stands for Sleep Polyphasically As Much As You Like. SPAMAYL was coined by Rasmus, and so far it seems he is the only person to be successful long term. While Uberman has a sense of extreme rigidity, SPAMAYL takes in extra sleep for extra flexibility. SPAMAYL is more flexible than Uberman, in that Rasmus could move things around for social events and a SPAMAYLer can expect to take no less than 7 naps a day, and often need as many as 10. Rasmus usually get between 2.5 and 4 hours of sleep per night.</string>
+    <string name="triphasicLrg">Triphasic was coined and made popular by Leif,  and is an efficient and simple schedule. There is little adaptation involved in a change from monophasic sleep to this schedule, and 3 to 5 hours extra are gained each day. The reason for its ease of adaption is that, similar to biphasic sleep, it aligns with the Circadian rhythm, with a nap after dusk, a nap before dawn, and a nap in the afternoon. A Triphasic sleeper typically sleeps between 4 and 5 hours a day.</string>
+    <string name="ubermanLrg">Uberman is the most commonly attempted, and most failed of polyphasic schedules. This is largely due to a misunderstanding of the difficulties associated with its adaptation period. Uberman is the most well known nap only schedule, and is an extension of the Everyman schedules, to the point of getting rid of the core sleep entirely. While Uberman is extremely difficult, it can have great benefits by increasing the amount of time in a person’s day drastically. An Uberman will have 6 or 8 x20 minute naps a day, with total sleep time ranging from 2-3 hours a day.</string>
+    <string name="siestaLrg">The siesta sleep is very common in Spain, Germany, and various other European countries. Spain specifically closes shops in the middle of the day for a few hours so that people can go home for lunch, napping, and other quiet activities. The siesta schedule consists of 5-6 hours of sleep at night and a 20 to 90 minute nap in the early afternoon. This form of sleep matches with our natural Circadian rhythm, and is commonly known by scientists to be healthier than monophasic sleep, with the short nap increasing productivity and alertness during evening hours. A biphasic sleeper typically sleeps between 5 and 7 hours a day.</string>
+    <string name="adaptStart">If you are new to polyphasic this is where you can learn about some of the methods of adaptation. These are all schedule non-specific and the logic can be applied to any sleeping schedule, usually.</string>
+
+</resources>

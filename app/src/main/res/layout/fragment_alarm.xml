@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.liquications.polyphasicsleep.AlarmFrag">
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="How Sleep Now Works:"
+            android:id="@+id/alarmMsg"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alarmMsg"
+            android:layout_centerHorizontal="true"
+            android:text="Hit sleep now, all current alarms will be deleted and new alarms and notifications will be set. Do this just before you go to bed. *Widget coming soon*"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/alarmMsg2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_below="@+id/alarmMsg2"
+            android:layout_centerHorizontal="true"
+            android:entries="@array/schedule_arrays"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setcustom"
+            android:id="@+id/setCustom"
+            android:layout_below="@+id/spinner"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:enabled="true"
+            android:background="#ffffffff"
+            />
+
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setdefault"
+            android:id="@+id/setDefault"
+            android:layout_alignBottom="@+id/setCustom"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:enabled="true"
+            android:background="#ffffffff" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:id="@+id/sleepNow"
+            android:layout_below="@+id/setCustom"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/sleepnow"
+            android:enabled="true"
+            android:layout_marginTop="15dp"
+            android:background="#ffffffff" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

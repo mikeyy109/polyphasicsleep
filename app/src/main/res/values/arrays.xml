@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="setSchedule">
+        <item name="1">Monophasic</item>
+        <item name="2">Segmented</item>
+        <item name="3">Siesta</item>
+        <item name="4">Triphasic</item>
+        <item name="5">Everyman</item>
+        <item name="6">Dual Core</item>
+        <item name="7">Uberman</item>
+        <item name="8">Dymaxion</item>
+        <item name="9">SPAMAYL</item>
+        <item name="10">Custom</item>
+    </string-array>
+    <string-array name="scheduleValues">
+        <item name="1">1</item>
+        <item name="2">2</item>
+        <item name="3">3</item>
+        <item name="4">4</item>
+        <item name="5">5</item>
+        <item name="6">6</item>
+        <item name="7">7</item>
+        <item name="8">8</item>
+        <item name="9">9</item>
+        <item name="10">10</item>
+
+    </string-array>
+    <string-array name="mathDif">
+        <item name="1">1</item>
+        <item name="2">2</item>
+        <item name="3">3</item>
+    </string-array>
+    <string-array name="difValues">
+        <item name="1">1</item>
+        <item name="2">2</item>
+        <item name="3">3</item>
+    </string-array>
+
+
+
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/popupHead"
+        android:text="First run message."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge">
+
+
+    </TextView>
+    <TextView
+        android:id="@+id/popupText"
+        android:text="Welcome to the polyphasic sleep beta app. Please be aware many features are still in development and in the process of being tested, any problems you encounter or suggestions you have can be reported directly to liquications@gmail.com or using the report bug menu.\n\nCustom schedules and settings have been added, access the settings menu to setup user name etc.. The linegraphs and other statistics are implemented but not yet pointing to any real data, this will change in coming updates.\n\nHow 'Sleep Now' button works: Once default schedule has been set or created every night before bed hit sleep now, all alarms and notifications will be set automatically."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp">
+
+
+    </TextView>
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="10dp">
+
+
+
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

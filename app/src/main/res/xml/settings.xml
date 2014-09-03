@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+    <PreferenceCategory android:title="@string/pref_user_profile" >
+        <EditTextPreference
+            android:title="@string/pref_user_name"
+            android:summary="@string/pref_user_name_summary"
+            android:key="prefUsername"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_general_setting" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="allowNotifications"
+            android:summary="@string/pref_allow_not_summary"
+            android:title="@string/pref_allow_not" >
+        </CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="goDark"
+            android:summary="@string/pref_goDark_summary"
+            android:title="@string/pref_goDark" >
+        </CheckBoxPreference>
+
+        <ListPreference
+            android:key="prefSchedule"
+            android:entries="@array/setSchedule"
+            android:summary="@string/pref_sync_frequency_summary"
+            android:entryValues="@array/scheduleValues"
+            android:title="@string/pref_sync_frequency" />
+        <ListPreference
+            android:key="defaultMath"
+            android:entries="@array/mathDif"
+            android:summary="@string/mathDifSum"
+            android:entryValues="@array/difValues"
+            android:title="@string/pref_mathdif"/>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="easyAlarm"
+            android:summary="Show 'I give up' button on alarm, untick for harder disable."
+            android:title="Alarm Give Up Button" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="firstRun"
+            android:summary="Show the first run message again"
+            android:title="First Time Run" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Custom Schedule">
+
+        <EditTextPreference
+            android:title="Custom Schedule Name"
+
+            android:key="custScheduleName">
+
+            </EditTextPreference>
+        <EditTextPreference
+            android:defaultValue="180"
+            android:dialogTitle="Core Sleep"
+            android:inputType="number"
+            android:key="coreSleep"
+            android:summary="Amount of core sleep in minutes"
+            android:title="Core Sleep Time" />
+
+        <EditTextPreference
+            android:defaultValue="240"
+            android:dialogTitle="Time to first nap"
+            android:inputType="number"
+            android:key="firstNap"
+            android:summary="Time in minutes to first nap"
+            android:title="First Nap Time" />
+
+        <EditTextPreference
+            android:defaultValue="120"
+            android:dialogTitle="Time to second nap"
+            android:inputType="number"
+            android:key="secondNap"
+            android:summary="Time in minutes to second nap"
+            android:title="Second Nap Time" />
+
+        <EditTextPreference
+            android:defaultValue="120"
+            android:dialogTitle="Time to third nap"
+            android:inputType="number"
+            android:key="thirdNap"
+            android:summary="Time in minutes to third nap"
+            android:title="Third Nap Time" />
+        <EditTextPreference
+            android:defaultValue="20"
+            android:dialogTitle="Amount of nap time"
+            android:inputType="number"
+            android:key="napTime"
+            android:summary="Amount in minutes nap lasts"
+            android:title="Length Of Nap" />
+
+
+        <EditTextPreference
+            android:defaultValue="3"
+            android:dialogTitle="Amount of naps"
+            android:inputType="number"
+            android:key="napAmount"
+            android:summary="If more than 3, use 'time between nap only' below for time between 4th+"
+            android:title="Amount Of Naps Needed" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Nap Only Schedule?">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="napOnly"
+            android:summary="Schedule only consists of naps?"
+            android:title="Nap Only Schedule" >
+        </CheckBoxPreference>
+        <EditTextPreference
+            android:defaultValue="240"
+            android:dialogTitle="Time between in minutes"
+            android:inputType="number"
+            android:key="napOnlyTimes"
+            android:summary="If nap only selected, how long between naps?"
+            android:title="Time Between Nap Only" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
