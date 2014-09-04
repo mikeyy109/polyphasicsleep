@@ -1,2 +1,0 @@
-configurations.create("default")
-artifacts.add("default", file('revmob-6.9.6.jar'))

@@ -81,21 +81,6 @@ public class Alarm implements Serializable {
 
 	}
 
-//	private void writeObject(java.io.ObjectOutputStream out) throws IOException {
-//		out.defaultWriteObject();
-//		out.writeObject(getAlarmToneUri().getEncodedPath());
-//	}
-
-//	private void readObject(java.io.ObjectInputStream in) throws IOException {
-//		try {
-//			in.defaultReadObject();
-//			this.setAlarmToneUri(Uri.parse(in.readObject().toString()));
-//		} catch (ClassNotFoundException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}		
-//	}
-
 	/**
 	 * @return the alarmActive
 	 */

@@ -50,13 +50,7 @@ public class AlarmActivity extends BaseActivity {
     int timeBetween;
     boolean napOnly;
 
-
-
     private PendingIntent pendingIntent;
-
-    private AdView adView;
-
-    private static final String AD_UNIT_ID = "ca-app-pub-9338557771855206/7570970178";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -74,20 +68,6 @@ public class AlarmActivity extends BaseActivity {
             }
         }
 
-
-        adView = new AdView(getApplicationContext());
-        adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId(AD_UNIT_ID);
-
-        LinearLayout layout = (LinearLayout) findViewById(R.id.linearLayout);
-        layout.addView(adView);
-
-        AdRequest adRequest = new com.google.android.gms.ads.AdRequest.Builder()
-//                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-//                .addTestDevice("4C02A15960B9C18195E90B96F69DBC8E")
-                .build();
-
-        adView.loadAd(adRequest);
 		mathAlarmListView = (ListView) findViewById(android.R.id.list);
 		mathAlarmListView.setLongClickable(true);
 		mathAlarmListView.setOnItemLongClickListener(new OnItemLongClickListener() {

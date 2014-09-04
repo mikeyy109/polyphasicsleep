@@ -20,10 +20,6 @@ public class ScheduleFrag extends Fragment {
     private ListView polyList;
     private PolyAdapter polyArrayAdapter;
 
-    private AdView adView;
-
-    private static final String AD_UNIT_ID = "ca-app-pub-9338557771855206/7570970178";
-
 
 
     Poly[] myPolyArray = new Poly[]{
@@ -59,25 +55,6 @@ public class ScheduleFrag extends Fragment {
             polyList.setAdapter(polyArrayAdapter);
         }
 
-//        RevMob revmob = RevMob.start(getActivity()); // RevMob Media ID configured in the AndroidManifest.xml file
-////        revmob.setTestingMode(RevMobTestingMode.WITH_ADS);
-//        RevMobBanner banner = revmob.createBanner(getActivity());
-//        ViewGroup view = (ViewGroup) rootView.findViewById(R.id.linearLayout);
-//        view.addView(banner);
-
-        adView = new AdView(rootView.getContext());
-        adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId(AD_UNIT_ID);
-
-        LinearLayout layout = (LinearLayout) rootView.findViewById(R.id.linearLayout);
-        layout.addView(adView);
-
-        AdRequest adRequest = new com.google.android.gms.ads.AdRequest.Builder()
-//                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-//                .addTestDevice("4C02A15960B9C18195E90B96F69DBC8E")
-                .build();
-
-        adView.loadAd(adRequest);
 
         polyList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -147,24 +124,18 @@ public class ScheduleFrag extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        if(adView != null){
-            adView.resume();
-        }
+
     }
 
     @Override
     public void onPause() {
-        if (adView != null){
-            adView.pause();
-        }
+
         super.onPause();
     }
 
     @Override
     public void onDestroy() {
-        if(adView != null){
-            adView.destroy();
-        }
+
         super.onDestroy();
     }
 

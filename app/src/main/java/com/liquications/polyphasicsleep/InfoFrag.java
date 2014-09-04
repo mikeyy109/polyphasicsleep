@@ -15,19 +15,17 @@ import com.google.android.gms.ads.AdView;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by Mike Clarke 19/08/2014.
  *
  */
 public class InfoFrag extends Fragment {
 
-    private AdView adView;
     private android.webkit.WebView webView;
 
     public String url;
     int imgUrl;
     int pageNum;
 
-    private static final String AD_UNIT_ID = "ca-app-pub-9338557771855206/7570970178";
 
 
     public InfoFrag() {
@@ -41,20 +39,6 @@ public class InfoFrag extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_info, container, false);
 
-
-        adView = new AdView(rootView.getContext());
-        adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId(AD_UNIT_ID);
-
-        LinearLayout layout = (LinearLayout) rootView.findViewById(R.id.linearLayout);
-        layout.addView(adView);
-
-        AdRequest adRequest = new com.google.android.gms.ads.AdRequest.Builder()
-//                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-//                .addTestDevice("4C02A15960B9C18195E90B96F69DBC8E")
-                .build();
-
-        adView.loadAd(adRequest);
         url = "http://www.polyphasicsociety.com/polyphasic-sleep/beginners/";
         webView = (android.webkit.WebView)rootView.findViewById(R.id.webView);
 

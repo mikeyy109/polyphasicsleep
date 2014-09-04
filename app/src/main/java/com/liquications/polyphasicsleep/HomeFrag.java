@@ -38,10 +38,6 @@ import java.util.ArrayList;
  */
 public class HomeFrag extends Fragment implements OnChartValueSelectedListener {
 
-    private AdView adView;
-
-    private static final String AD_UNIT_ID = "ca-app-pub-9338557771855206/7570970178";
-
     TextView userText;
     String user;
     String currentSchedule;
@@ -79,20 +75,6 @@ public class HomeFrag extends Fragment implements OnChartValueSelectedListener {
 //        List<Sleep> sleeps = new LinkedList<Sleep>();
 //
 //        sleeps = db.getAllSleeps();
-
-        adView = new AdView(rootView.getContext());
-        adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId(AD_UNIT_ID);
-
-        LinearLayout layout = (LinearLayout) rootView.findViewById(R.id.linearLayout);
-        layout.addView(adView);
-
-        AdRequest adRequest = new com.google.android.gms.ads.AdRequest.Builder()
-//                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-//                .addTestDevice("4C02A15960B9C18195E90B96F69DBC8E")
-                .build();
-
-        adView.loadAd(adRequest);
 
 
 
