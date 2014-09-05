@@ -9,11 +9,23 @@ scheduler that schedules all your alarms and sends notifications when you need t
 and statistics are planned features, currently the statistics are filled with dummy data, these need to be implemented.
 
 Planned/Current Features:
+-------------------------
 •Polyphasic sleep tracker.
+
 •Schedule statistics.
+
 •Automatic alarm scheduler. ✓
+
 •'Sleep Now' button for auto setting. ✓
+
 •Nap reminders. ✓
+
 •Desktop widgets.
 
 If you wish to contribute to this project please do so, there are many features to add, bugs to address and code to clean/optimise.
+
+Screenshots:
+------------
+![alt tag](https://raw.github.com/mikeyy109/polyphasicsleep/master/screenshots/Screenshot_2014-08-10-11-51-40.png)
+![alt tag](https://raw.github.com/mikeyy109/polyphasicsleep/master/screenshots/Screenshot_2014-08-10-11-52-13.png)
+
