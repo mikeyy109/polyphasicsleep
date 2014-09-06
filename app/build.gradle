@@ -26,10 +26,8 @@ dependencies {
     // You must install or update the Support Repository through the SDK manager to use this dependency.
     // You must install or update the Support Repository through the SDK manager to use this dependency.
     compile 'com.google.android.gms:play-services:5.0.89'
-    compile project(':MPChartLib')
     compile 'com.android.support:appcompat-v7:19.+'
     // You must install or update the Support Repository through the SDK manager to use this dependency.
     compile 'com.android.support:support-v4:19.+'
     compile 'com.squareup.picasso:picasso:2.3.+'
-
 }

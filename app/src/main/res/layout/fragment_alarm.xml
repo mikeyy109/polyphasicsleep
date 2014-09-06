@@ -78,15 +78,6 @@
             android:layout_marginTop="15dp"
             android:background="#ffffffff" />
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true">
-
-        </LinearLayout>
     </RelativeLayout>
 
 </FrameLayout>

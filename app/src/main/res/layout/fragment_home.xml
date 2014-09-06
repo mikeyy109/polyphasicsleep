@@ -4,16 +4,6 @@
     android:layout_height="match_parent"
      >
 
-
-
-    <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/chart"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-
-        android:layout_below="@+id/userName"
-         />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,25 +16,13 @@
         android:paddingTop="15dp"
         android:paddingBottom="15dp"/>
 
-
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true">
-
-    </LinearLayout>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="News and Updates:"
         android:id="@+id/updateText"
-        android:layout_below="@+id/chart"
+        android:layout_below="@+id/userName"
         android:layout_centerHorizontal="true"
         android:textStyle="italic"
         />

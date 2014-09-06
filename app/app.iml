@@ -83,7 +83,6 @@
     <orderEntry type="library" exported="" name="picasso-2.3.4" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-19.1.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-5.0.89" level="project" />
-    <orderEntry type="module" module-name="MPChartLib" exported="" />
   </component>
 </module>
 

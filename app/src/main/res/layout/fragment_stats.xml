@@ -23,15 +23,5 @@
             />
     </ScrollView>
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        >
-    </LinearLayout>
-
-
 
 </FrameLayout>
