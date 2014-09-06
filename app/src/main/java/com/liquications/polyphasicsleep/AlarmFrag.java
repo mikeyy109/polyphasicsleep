@@ -1,6 +1,7 @@
 package com.liquications.polyphasicsleep;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -20,12 +21,22 @@ import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.liquications.polyphasicsleep.database.SleepNowDatabase;
 
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Calendar;
+
 
 /**
  * Created by Mike Clarke 19/08/2014.
  *
  */
 public class AlarmFrag extends Fragment {
+
+    public static final String DATA_FILE = "polydata";
 
     private Spinner spinner;
     ImageButton setCustom;
@@ -35,7 +46,7 @@ public class AlarmFrag extends Fragment {
     int scheduleSelected = 1;
     ImageButton setDefault;
     int perfsDefaultSchedule;
-    int sleepInt;
+    String sleepData;
 
     public AlarmFrag() {
         // Required empty public constructor
@@ -54,6 +65,8 @@ public class AlarmFrag extends Fragment {
         String temp = sharedPrefs.getString("prefSchedule", "0");
         perfsDefaultSchedule = Integer.parseInt(temp);
 
+        // Get current sleep data
+        sleepData = getSleepData(rootView.getContext());
 
         spinner = (Spinner)rootView.findViewById(R.id.spinner);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -86,6 +99,12 @@ public class AlarmFrag extends Fragment {
         sleepNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Get current time to save to database.
+                Calendar cal = Calendar.getInstance();
+                int hour = cal.HOUR;
+                String temp = Integer.toString(hour);
+                sleepData += temp;
+
                 // Make toasts, Send alarm intents
                 Toast.makeText(rootView.getContext(), "Old Alarms Deleted!", Toast.LENGTH_SHORT).show();
                 alarmIntent2 = new Intent(rootView.getContext(),AlarmActivity.class);
@@ -113,17 +132,51 @@ public class AlarmFrag extends Fragment {
         return rootView;
     }
 
-    private void updateIntSleep(int sleep){
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
-        SharedPreferences.Editor editor = preferences.edit();
-        if(sleep == 0){
-            editor.putInt("SLEEPINT",0);
-            editor.apply();
-        }else{
-            preferences.edit().putInt("SLEEPINT", sleep).apply();
+    private void saveSleepData(String sleepData, Context ctx){
+        FileOutputStream fileOut = null;
+        try{
+            fileOut = ctx.openFileOutput(DATA_FILE, Context.MODE_PRIVATE);
+            fileOut.write(sleepData.getBytes());
+        }catch (FileNotFoundException e){
+            e.printStackTrace();
+        }catch (IOException e){
+            e.printStackTrace();
+        }finally{
+            try{
+                if(fileOut != null){
+                    fileOut.close();
+                }
+            }catch(IOException e){
+                e.printStackTrace();
+            }
         }
-        sleepInt = preferences.getInt("SLEEPINT", 0);
+    }
 
+    private String getSleepData(Context ctx){
+        FileInputStream fileIn = null;
+        String fileCopy = null;
+
+        try{
+            fileIn = ctx.openFileInput(DATA_FILE);
+            int size = fileIn.available();
+            byte[] buffer = new byte[size];
+            fileIn.read(buffer);
+            fileIn.close();
+            fileCopy = new String(buffer,"UTF-8");
+        }catch(FileNotFoundException e){
+            e.printStackTrace();
+        }catch(IOException e){
+            e.printStackTrace();
+        }finally {
+            try{
+                if(fileIn != null){
+                    fileIn.close();
+                }
+            }catch(IOException e){
+                e.printStackTrace();
+            }
+        }
+        return fileCopy;
     }
 
 

@@ -22,10 +22,6 @@
   <component name="ChangeListManager">
     <list default="true" id="664d83d4-a8df-4b8d-86ca-b4068be827d4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/AlarmFrag.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/AlarmFrag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/HomeFrag.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/HomeFrag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/database/SleepNowDatabase.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/database/SleepNowDatabase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/StatsFrag.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/StatsFrag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="polyphasicsleep.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,20 +54,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlarmFrag.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AlarmFrag.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/AlarmFrag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1182" max-vertical-offset="1944">
-              <caret line="88" column="50" selection-start-line="88" selection-start-column="50" selection-end-line="88" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.35433072" vertical-offset="1026" max-vertical-offset="2736">
+              <caret line="105" column="34" selection-start-line="105" selection-start-column="34" selection-end-line="105" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatsFrag.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="StatsFrag.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/StatsFrag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56692916" vertical-offset="0" max-vertical-offset="762">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
               <caret line="39" column="70" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
               <folding />
             </state>
@@ -1732,14 +1728,14 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/HomeFrag.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/AlarmFrag.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/database/SleepNowDatabase.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/StatsFrag.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/AlarmFrag.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1638" />
+    <option name="x" value="38" />
     <option name="y" value="-903" />
     <option name="width" value="1562" />
     <option name="height" value="903" />
@@ -2188,7 +2184,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1638" y="-903" width="1562" height="903" extended-state="6" />
+    <frame x="38" y="-903" width="1562" height="903" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2577,18 +2573,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/AlarmFrag.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/StatsFrag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1182" max-vertical-offset="1944">
-          <caret line="88" column="50" selection-start-line="88" selection-start-column="50" selection-end-line="88" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+          <caret line="39" column="70" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/StatsFrag.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/liquications/polyphasicsleep/AlarmFrag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56692916" vertical-offset="0" max-vertical-offset="762">
-          <caret line="39" column="70" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
+        <state vertical-scroll-proportion="0.35433072" vertical-offset="1026" max-vertical-offset="2736">
+          <caret line="105" column="34" selection-start-line="105" selection-start-column="34" selection-end-line="105" selection-end-column="34" />
           <folding />
         </state>
       </provider>
