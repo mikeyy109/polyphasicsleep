@@ -37,18 +37,7 @@ public class StatsFrag extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_stats, container, false);
 
-        SleepNowDatabase db = new SleepNowDatabase(getActivity());
-        List<Sleep> sleeps = new LinkedList<Sleep>();
-
-        sleeps = db.getAllSleeps();
-
         TextView text = (TextView)rootView.findViewById(R.id.lrgText);
-        text.setText(sleeps.toString());
-//        for(int i = 0; i < sleeps.size(); i++){
-//            text.setText(sleeps.get(i).toString());
-//        }
-
-
         return rootView;
     }
 

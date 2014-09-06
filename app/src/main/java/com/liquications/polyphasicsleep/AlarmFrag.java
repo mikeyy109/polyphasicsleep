@@ -35,7 +35,6 @@ public class AlarmFrag extends Fragment {
     int scheduleSelected = 1;
     ImageButton setDefault;
     int perfsDefaultSchedule;
-    int sleep;
     int sleepInt;
 
     public AlarmFrag() {
@@ -49,26 +48,14 @@ public class AlarmFrag extends Fragment {
         // Inflate the layout for this fragment
         final View rootView = inflater.inflate(R.layout.fragment_alarm, container, false);
 
+        // Get default schedule data
         SharedPreferences sharedPrefs = PreferenceManager
                 .getDefaultSharedPreferences(rootView.getContext());
         String temp = sharedPrefs.getString("prefSchedule", "0");
         perfsDefaultSchedule = Integer.parseInt(temp);
 
-//        sleepInt = sharedPrefs.getInt("SLEEPINT", 0);
-//        updateIntSleep(sleepInt);
-
-//        saveData("psbdata.txt", "test", rootView.getContext());
-
-//        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(rootView.getContext());
-//        int defaultSchedule = preferences.getInt("SCHEDULE", 0);
-
 
         spinner = (Spinner)rootView.findViewById(R.id.spinner);
-
-        final SleepNowDatabase db = new SleepNowDatabase(getActivity());
-
-
-
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
@@ -99,15 +86,7 @@ public class AlarmFrag extends Fragment {
         sleepNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                sleepInt = sleepInt + 1;
-//                updateIntSleep(sleepInt);
-//                Sleep sleep = new Sleep();
-//                sleep.setNum(sleepInt);
-//                Calendar time = Calendar.getInstance();
-//
-//                sleep.setTime(time.getTime().toString());
-//                db.addSleep(sleep);
-
+                // Make toasts, Send alarm intents
                 Toast.makeText(rootView.getContext(), "Old Alarms Deleted!", Toast.LENGTH_SHORT).show();
                 alarmIntent2 = new Intent(rootView.getContext(),AlarmActivity.class);
                 if(scheduleSelected > 0){

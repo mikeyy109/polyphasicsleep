@@ -68,16 +68,6 @@ public class HomeFrag extends Fragment implements OnChartValueSelectedListener {
         userText = (TextView)rootView.findViewById(R.id.userName);
         userText.setText(user + ". Current schedule: " + currentSchedule);
 
-
-
-
-//        SleepNowDatabase db = new SleepNowDatabase(getActivity());
-//        List<Sleep> sleeps = new LinkedList<Sleep>();
-//
-//        sleeps = db.getAllSleeps();
-
-
-
         mChart = (LineChart) rootView.findViewById(R.id.chart);
 
         // create a color template for one dataset with only one color

@@ -12,6 +12,8 @@ import java.util.List;
 
 /**
  * Created by Mike Clarke on 19/08/2014.
+ *
+ * Not currently used in app.
  */
 
 
