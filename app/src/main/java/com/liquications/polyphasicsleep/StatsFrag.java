@@ -6,17 +6,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.AdView;
-import com.liquications.polyphasicsleep.database.Sleep;
-import com.liquications.polyphasicsleep.database.SleepNowDatabase;
-
-import java.util.LinkedList;
-import java.util.List;
 
 
 /**
