@@ -95,7 +95,7 @@ public class AlarmFrag extends Fragment {
                 int hour = cal.HOUR;
                 String temp = Integer.toString(hour);
                 sleepData += temp;
-
+                saveSleepData(sleepData,rootView.getContext());
                 // Make toasts, Send alarm intents
                 Toast.makeText(rootView.getContext(), "Old Alarms Deleted!", Toast.LENGTH_SHORT).show();
                 alarmIntent2 = new Intent(rootView.getContext(),AlarmActivity.class);
@@ -143,7 +143,7 @@ public class AlarmFrag extends Fragment {
         }
     }
 
-    private String getSleepData(Context ctx){
+    public String getSleepData(Context ctx){
         FileInputStream fileIn = null;
         String fileCopy = null;
 

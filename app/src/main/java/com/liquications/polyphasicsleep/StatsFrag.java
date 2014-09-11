@@ -16,6 +16,8 @@ import android.widget.TextView;
  */
 public class StatsFrag extends Fragment {
 
+    String testSleepData;
+
 
     public StatsFrag() {
         // Required empty public constructor
@@ -29,6 +31,10 @@ public class StatsFrag extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_stats, container, false);
 
         TextView text = (TextView)rootView.findViewById(R.id.lrgText);
+
+        AlarmFrag af = new AlarmFrag();
+        testSleepData = af.getSleepData(rootView.getContext());
+        text.setText(testSleepData);
         return rootView;
     }
 
