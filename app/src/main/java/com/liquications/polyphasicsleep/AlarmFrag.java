@@ -18,6 +18,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 
@@ -91,10 +93,9 @@ public class AlarmFrag extends Fragment {
             @Override
             public void onClick(View view) {
                 //Get current time to save to database.
+                DateFormat dateFormat = new SimpleDateFormat("HH:mm");
                 Calendar cal = Calendar.getInstance();
-                int hour = cal.HOUR;
-                String temp = Integer.toString(hour);
-                sleepData += temp;
+                sleepData += dateFormat.format(cal.getTime())+"&&";
                 saveSleepData(sleepData,rootView.getContext());
                 // Make toasts, Send alarm intents
                 Toast.makeText(rootView.getContext(), "Old Alarms Deleted!", Toast.LENGTH_SHORT).show();
